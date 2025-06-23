@@ -1,0 +1,38 @@
+.container {
+    height: 246px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #273575, #5776ff);
+    padding: 0 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+.missionText {
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.4;
+    justify-content: center;
+    align-items: justify;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 60px 20px;
+    }
+    
+    .missionText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .missionText {
+        font-size: 18px;
+    }
+}

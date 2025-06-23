@@ -1,0 +1,181 @@
+.container {
+  height: 730px;
+  background-color: #f0f0f0;
+  display: flex;
+  padding: 0 200px;
+}
+
+.leftSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 60px;
+}
+
+.leftSection h2 {
+  font-size: 32px;
+  color: #89363F;
+  margin-bottom: 30px;
+}
+
+.leftSection span {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.underline {
+  width: 100px;
+  height: 2px;
+  background-color: #b52556;
+  margin: 20px 0;
+}
+
+.messageButton {
+  background-color: #b52556;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.messageButton:hover {
+  background-color: #9a1d47;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 540px;
+  height: 627.89px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bulletActive {
+  background-color: #ba4054;
+}
+
+/* Responsive styles */
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  .leftSection {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 540px;
+    height: 500px; /* Reduced from 627.89px */
+  }
+
+  .cardImage {
+    width: 80%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain; /* Changed from cover to contain */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .leftSection h2 {
+    font-size: 28px;
+  }
+
+  .swiper {
+    height: 400px;
+  }
+
+  .cardImage {
+    width: 85%;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 300px;
+  }
+
+  .cardImage {
+    width: 90%;
+    max-height: 250px;
+    padding: 10px; /* Add some padding */
+  }
+
+  .pagination {
+    margin-top: 15px;
+  }
+
+  .bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .swiper {
+    height: 250px;
+  }
+
+  .cardImage {
+    max-height: 200px;
+  }
+}

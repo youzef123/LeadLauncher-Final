@@ -1,0 +1,94 @@
+.seventhContainer {
+  width: 100%;
+  height: 231px;
+  background-color: #273575;
+  /* Optional: Add padding if you need internal spacing */
+  padding: 20px;
+  box-sizing: border-box;
+  /* Optional: Add flex properties if you need to center content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative; /* Needed for proper alignment */
+}
+
+.sectionHeading {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  text-align: left;
+ 
+}
+
+/* If you're reusing the fadeInUp animation from earlier */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.seventhContainer {
+  width: 100%;
+  height: 300px;
+  background-color: #273575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sectionHeading {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px; /* Adjust to match metricItem padding */
+}
+
+/* Fix metric alignment */
+.metricsContainer {
+  display: flex;
+  gap: 20px; /* Space between columns */
+  padding-left: 0px; /* Match heading's margin-left */
+}
+
+.metricItem {
+  min-width: 120px; /* Prevents uneven widths */
+  text-align: center; /* Center numbers and labels */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical alignment */
+  font-weight: bold;
+  color: white;
+}
+
+.metricValue {
+  font-size: 70px; /* Example size */
+  font-weight: normal;
+  color: white;
+}
+
+.metricLabel {
+  font-size: 16px;
+  text-transform: lowercase; /* Optional: "OnPointers" → "onpointers" */
+}
+
+
+@media (max-width: 768px) {
+  .metricsContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+  }
+  .metricItem {
+      width: 100%;
+      max-width: 347px;
+  }
+  .seventhContainer {
+      height: auto;
+      padding: 40px 20px;
+  }
+}

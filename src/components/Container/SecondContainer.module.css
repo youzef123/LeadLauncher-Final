@@ -1,0 +1,111 @@
+.secondContainer {
+    height: 263px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.topSection {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.bottomSection {
+    height: 70%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.swiperContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px !important;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.swiper-slide-active .logo {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.swiper-slide-next .logo,
+.swiper-slide-prev .logo {
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+.swiper-slide:not(.swiper-slide-next):not(.swiper-slide-prev):not(.swiper-slide-active) .logo {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .secondContainer {
+        height: 230px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        height: 130px;
+        max-width: 140px;
+    }
+
+    .slide {
+        width: 160px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .secondContainer {
+        height: 200px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 100px;
+        max-width: 120px;
+    }
+
+    .slide {
+        width: 140px !important;
+    }
+}

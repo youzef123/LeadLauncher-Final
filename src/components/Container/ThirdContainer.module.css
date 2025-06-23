@@ -1,0 +1,18 @@
+.thirdContainer {
+  padding: 4rem 2rem; /* Add some padding around */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically if container has height */
+  min-height: 200px;       /* Adjust height as needed */
+  
+}
+
+.servicesTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #273575;          /* Strong blue color for visibility */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}

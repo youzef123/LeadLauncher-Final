@@ -1,0 +1,70 @@
+
+.parallaxBackground {
+  /* The actual parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Minimum height to enable scrolling */
+  min-height: 80vh;
+  
+  /* Create the parallax scrolling effect */
+  position: relative;
+
+}
+
+.parallaxContent {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4rem 2rem;
+  max-width: auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: #273575;
+}
+.aboutUsContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.companyTitle {
+  font-size: 36px;
+  color: #273575;
+  margin: 0 0 2rem 1rem; /* Added left padding */
+  padding-bottom: 10px;
+  border-bottom: 2px solid #273575;
+  width: fit-content;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.logo {
+  width: 300px;
+  height: 102px;
+  object-fit: contain;
+}
+
+.aboutText {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.paragraph {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}

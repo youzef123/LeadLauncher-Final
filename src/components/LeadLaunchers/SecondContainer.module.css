@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #155290, white);
+  padding: 40px;
+  
+}
+
+.contentWrapper {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.textItem {
+  margin-bottom: 30px;
+}
+
+.textItem:last-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  font-size: 24px;
+  color: #273575;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.subText {
+  font-size: 20px;
+  color: gray;
+  margin: 0;
+  line-height: 1.4;
+}

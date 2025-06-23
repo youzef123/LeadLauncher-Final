@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    height: 482px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.leftSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.rightSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.medicalBillingImage {
+    width: 744px;
+    height: 422px;
+    object-fit: cover;
+}
+
+/* Tablet styles (typically 768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: 100px;
+        margin-right: 100px;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .leftSection {
+        order: 2;
+        padding: 30px 0;
+    }
+
+    .rightSection {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .medicalBillingImage {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+}
+
+/* Mobile styles (typically below 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 0;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .medicalBillingImage {
+        max-width: 100%;
+    }
+}
