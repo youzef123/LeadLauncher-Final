@@ -7,6 +7,8 @@ import VirtualAssistantContainer from './components/virtual/VirtualAssistantCont
 import LeadLauncherContainer from './components/LeadLaunchers/LeadLauncherContainer';
 import AboutUsContainer from './components/AboutUs/AboutUsContainer';
 import ContactUsContainer from './components/ContactUs/ContactUsContainer';
+import ITContainer from './components/Industries/ITContainer';
+
 
 function App() {
   return (
@@ -16,6 +18,11 @@ function App() {
       <Route path="/lead-generation" element={<LeadGenerationAndAppointmentSettings />} />
       <Route path="/data-profiling" element={<MedicalContainer />} />
       <Route path="/appointment-setting" element={<VirtualAssistantContainer />} />
+
+        {/* Industries */}
+      <Route path="/it-software" element={<ITContainer />} />
+
+
       <Route path="/leadlauncher" element={<LeadLauncherContainer />} />
       <Route path="/about-us" element={<AboutUsContainer />} />
       <Route path="/contact-us" element={<ContactUsContainer />} />

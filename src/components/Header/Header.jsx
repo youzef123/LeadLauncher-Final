@@ -7,6 +7,7 @@ import GetQuote from '../modals/GetQoute'; // Import the modal component
 
 export default function Header() {
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showQuoteModal, setShowQuoteModal] = useState(false); // State for modal visibility
   const location = useLocation();
@@ -21,8 +22,8 @@ export default function Header() {
       (path === '/solutions' && (
         activePath.includes('/lead-generation') ||
         activePath.includes('/data-profiling') ||
-        activePath.includes('/appointment-setting') ||
-        activePath.includes('/customer-service')
+        activePath.includes('/appointment-setting') 
+
       ));
   };
 
@@ -91,14 +92,87 @@ export default function Header() {
                   </div>
                 )}
               </li>
-              <li>
-                <Link
-                  to="/industries"
-                  className={`${styles.menuItem} ${isActive('/industries') ? styles.active : ''}`}
+
+              {/* Industries */}
+               <li
+                className={styles.dropdown}
+                onMouseEnter={() => setIsIndustriesOpen(true)}
+                onMouseLeave={() => setIsIndustriesOpen(false)}
+                onClick={() => setIsIndustriesOpen(!isIndustriesOpen)}
+              >
+                <a
+                  href="#industries"
+                  className={`${styles.menuItem} ${isActive('#industries') ? styles.active : ''}`}
                 >
-                  Industries
-                </Link>
+                  Industries <FaChevronDown className={styles.dropdownIcon} />
+                </a>
+                {isIndustriesOpen && (
+                  <div className={styles.dropdownContent}>
+                    <Link
+                      to="/it-software"
+                      className={isDropdownItemActive('/it-software') ? styles.activeDropdownItem : ''}
+                    >
+                      IT and Software
+                    </Link>
+                    <Link
+                      to="/logistics"
+                      className={isDropdownItemActive('/logistics') ? styles.activeDropdownItem : ''}
+                    >
+                      Logistics
+                    </Link>
+                    <Link
+                      to="/healthcare"
+                      className={isDropdownItemActive('/healthcare') ? styles.activeDropdownItem : ''}
+                    >
+                      Healthcare
+                    </Link>
+                    <Link
+                      to="/finance"
+                      className={isDropdownItemActive('/finance') ? styles.activeDropdownItem : ''}
+                    >
+                      Finance
+                    </Link>
+                    <Link
+                      to="/ecommerce"
+                      className={isDropdownItemActive('/ecommerce') ? styles.activeDropdownItem : ''}
+                    >
+                      eCommerce
+                    </Link>
+                    <Link
+                      to="/commercial"
+                      className={isDropdownItemActive('/commercial') ? styles.activeDropdownItem : ''}
+                    >
+                      Commercial Service
+                    </Link>
+                    <Link
+                      to="/marketing"
+                      className={isDropdownItemActive('/marketing') ? styles.activeDropdownItem : ''}
+                    >
+                      Marketing and Advertising
+                    </Link>
+                    <Link
+                      to="/staffing"
+                      className={isDropdownItemActive('/staffing') ? styles.activeDropdownItem : ''}
+                    >
+                      Staffing and Consulting
+                    </Link>
+                    <Link
+                      to="/energy"
+                      className={isDropdownItemActive('/energy') ? styles.activeDropdownItem : ''}
+                    >
+                      Energy
+                    </Link>
+                    <Link
+                      to="/realestate"
+                      className={isDropdownItemActive('/realestate') ? styles.activeDropdownItem : ''}
+                    >
+                      Real Estate
+                    </Link>
+
+                  </div>
+                )}
               </li>
+              {/* End */}
               <li>
                 <a
                   href="/leadlauncher"
