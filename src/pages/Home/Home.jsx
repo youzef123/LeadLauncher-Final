@@ -13,6 +13,7 @@ import NinthContainer from '../../components/Container/NinthContainer';
 import TenthContainer from '../../components/Container/TenthContainer';
 import EleventhContainer from '../../components/Container/EleventhContainer';
 import GetQuote from '../../components/modals/GetQoute';
+import { useAnimatedCount } from '../../hooks/useAnimatedCount';
 import logo1 from "../../assets/Logo-1.webp";
 import conversionGif from "../../assets/ConversionRate3DAnimatedIcon-ezgif.com-crop.gif"; 
 import profitGif from "../../assets/Profit-3D-Animated-Icon.gif";
@@ -24,6 +25,8 @@ import HeroBanner1 from "../../assets/HeroBanner.png";
 
 
 export default function Home() {
+  
+
   const [selectedOption, setSelectedOption] = useState('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showScrollArrow, setShowScrollArrow] = useState(false);
@@ -68,6 +71,8 @@ export default function Home() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+ 
 
   return (
     <div className={styles.home} ref={homeRef}>

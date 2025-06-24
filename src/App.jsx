@@ -8,7 +8,10 @@ import LeadLauncherContainer from './components/LeadLaunchers/LeadLauncherContai
 import AboutUsContainer from './components/AboutUs/AboutUsContainer';
 import ContactUsContainer from './components/ContactUs/ContactUsContainer';
 import ITContainer from './components/Industries/ITContainer';
-
+import LogisticsContainer from './components/Industries/LogisticsContainer';
+import HealthcareContainer from './components/Industries/HealthcareContainer';
+import FinanceContainer from './components/Industries/FinanceContainer';
+// import EcommerceContainer from './components/Industries/EcommerceContainer';
 
 function App() {
   return (
@@ -21,6 +24,10 @@ function App() {
 
         {/* Industries */}
       <Route path="/it-software" element={<ITContainer />} />
+      <Route path="/logistics" element={<LogisticsContainer />} />
+      <Route path="/healthcare" element={<HealthcareContainer />} />
+      <Route path="/finance" element={<FinanceContainer />} />
+      {/* <Route path="/ecommerce" element={<EcommerceContainer />} /> */}
 
 
       <Route path="/leadlauncher" element={<LeadLauncherContainer />} />

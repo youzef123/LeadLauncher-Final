@@ -1,10 +1,10 @@
 import { useAnimatedCount } from '../../hooks/useAnimatedCount';
-import styles from './ITContainer.module.css';
+import styles from './HealthcareContainer.module.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-export default function ITContainer() {
-  const targetValues = [76, 10090, 94]; // Clients, Leads, Retention %
+export default function HealthcareContainer() {
+  const targetValues = [36, 4309, 82]; // Clients, Leads, Retention %
   
   const {
     counts: [clientCount, leadCount, retentionCount],
@@ -26,7 +26,8 @@ export default function ITContainer() {
       <Header />
       <div className={styles.container}>
         {/* First Section */}
-        <h2 className={styles.sectionHeader}>IT and Software</h2>
+        <h2 className={styles.sectionHeader}>Healthcare
+</h2>
         <div className={styles.firstSection}>
           {/* Left Column */}
           <div className={styles.leftColumn}>
@@ -34,36 +35,31 @@ export default function ITContainer() {
           </div>
           {/* Right Column */}
           <div className={styles.rightColumn} >
-            <h2>Our IT & Software Expertise</h2>
-            <p>Majority of our marketing experiences are in the IT and Software space. From start up and mobile application firms to large IT and software companies, we've successfully run several marketing campaigns that have resulted to substantial new clients and increase in overall revenue.</p>
-            <p>Our marketing experts are highly skilled in generating qualified leads in these verticals:</p>
+          
+            <p>Whether you provide medical services/products or other related healthcare solutions, Onpoint Prospecting Inc has the right marketing tools to get those sales-ready leads for you. We fully understand how meticulous your industry can be, so we devised a strategy where we get to deliver on our goal of filling up your pipeline and at the same time keeps the integrity and quality of leads being submitted.
+</p>
+            <p>We already helped a lot of clients who specialize in:</p>
             <div className={styles.servicesList}>
               {/* Left Column */}
               <div className={styles.servicesColumn} style={getAnimationStyleRight(0)}>
                 <ul>
-                  <li>Software development</li>
-                  <li>Software Testing</li>
-                  <li>CRM/ ERP/ EHR/ EMR/ CMS</li>
-                  <li>Web and mobile application development</li>
-                  <li>Software as a service (SaaS) solutions</li>
-                  <li>Ecommerce Platform</li>
-                  <li>Data integration</li>
-                  <li>Business Intelligence</li>
-                  <li>Scheduling and time management software</li>
+                  <li>EMR/EHR Software</li>
+                  <li>Consulting Services</li>
+                  <li>Medical Supplies (Masks/PPEs)</li>
+                  <li>Online Drugstores/Delivery</li>
+                  <li>Dental Software</li>
+                  <li>Back Brace</li>
                 </ul>
               </div>
               
               {/* Right Column */}
               <div className={styles.servicesColumn} style={getAnimationStyleRight(0)}>
                 <ul>
-                  <li>IT Staffing</li>
-                  <li>Managed IT Services</li>
-                  <li>IT Infrastructure</li>
-                  <li>Disaster and Back up Recovery Solutions</li>
-                  <li>Data and Analytics</li>
-                  <li>Telecom/ Mobile Solutions</li>
-                  <li>Internet of Things</li>
-                  <li>Cyber Security</li>
+                   <li>Outpatient Services</li>
+                    <li>Medical Insurance</li>
+                    <li>Personal Insurance</li>
+                    <li>Medical Records</li>
+                    <li>Collections</li>
                 </ul>
               </div>
             </div>
@@ -72,7 +68,7 @@ export default function ITContainer() {
 
         {/* Second Section - Animated Stats */}
         <div className={styles.secondSection} ref={sectionRef}>
-          <h2 className={styles.sectionTitle} style={getAnimationStyleBottom(0)}>IT and Software:</h2>
+          <h2 className={styles.sectionTitle} style={getAnimationStyleBottom(0)}>Healthcare:</h2>
           
           <div className={styles.threeColumnContainer}>
             <div className={styles.column} style={getAnimationStyleBottom(0)}>

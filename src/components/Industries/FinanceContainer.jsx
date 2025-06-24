@@ -1,5 +1,5 @@
 import { useAnimatedCount } from '../../hooks/useAnimatedCount';
-import styles from './ITContainer.module.css';
+import styles from './FinanceContainer.module.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
