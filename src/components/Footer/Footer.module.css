@@ -3,6 +3,7 @@
   color: white;
   padding: 3rem 2rem 1rem;
   font-family: 'Poppins', sans-serif;
+  z-index: 10;
 }
 
 .footerContainer {

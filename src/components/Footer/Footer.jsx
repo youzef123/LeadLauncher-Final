@@ -49,14 +49,14 @@ export default function Footer() {
         <div className={styles.footerSection}>
           <h3 className={styles.footerHeading}>Industries</h3>
           <ul className={styles.footerList}>
-            <li><Link to="/cost-of-diy" className={styles.footerLink}>IT and Software</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>Logistics</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>Healthcare</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>eCommerce</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>Marketing and Advertising</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>Staffing and Consulting</Link></li>
-             <li><Link to="/company-profile" className={styles.footerLink}>Energy</Link></li>
-            <li><Link to="/company-profile" className={styles.footerLink}>Real Estate</Link></li>
+            <li><Link to="/it-software" className={styles.footerLink}>IT and Software</Link></li>
+            <li><Link to="/logistics" className={styles.footerLink}>Logistics</Link></li>
+            <li><Link to="/healthcare" className={styles.footerLink}>Healthcare</Link></li>
+            <li><Link to="/ecommerce" className={styles.footerLink}>eCommerce</Link></li>
+            <li><Link to="/marketing" className={styles.footerLink}>Marketing and Advertising</Link></li>
+            <li><Link to="/staffing" className={styles.footerLink}>Staffing and Consulting</Link></li>
+             <li><Link to="/energy" className={styles.footerLink}>Energy</Link></li>
+            <li><Link to="/realestate" className={styles.footerLink}>Real Estate</Link></li>
           </ul>
         </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
             <a href="#" aria-label="Twitter">
               <FaTwitter />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/the-leadlauncher" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
           </div>

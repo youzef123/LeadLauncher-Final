@@ -7,6 +7,10 @@ import Logo from '../../assets/Single-logo.png';
 
 
 export default function LeadLauncherContainer() {
+    
+ 
+    
+  
     const [showScrollArrow, setShowScrollArrow] = useState(false);
     const homeRef = useRef(null);
 
@@ -33,11 +37,12 @@ export default function LeadLauncherContainer() {
         };
     }, []);
 
+
     return (
        <>
       <Header />
       <div className={styles.LeadLauncherContainer}>
-        <h1 className={styles.sectionTitle}>WHY LEAD LAUNCHERS?</h1>
+        <h1 className={styles.sectionTitle} >WHY LEAD LAUNCHERS?</h1>
         <div className={styles.cardsContainer}>
           {/* Card 1 */}
           <div className={styles.card}>
